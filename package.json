@@ -1,0 +1,25 @@
+{
+  "name": "filesytem",
+  "version": "1.0.0",
+  "description": "Filesystem to upload files and consulting them",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EydenVillanueva/FileSytem.git"
+  },
+  "author": "Eyden Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EydenVillanueva/FileSytem/issues"
+  },
+  "homepage": "https://github.com/EydenVillanueva/FileSytem#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5"
+  }
+}
