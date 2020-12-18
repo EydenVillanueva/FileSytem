@@ -20,7 +20,5 @@ const File = sequelize.define('file', {
     }
 });
 
-File.belongsTo(Allergy, {
-    as: "allergy"
-});
+Allergy.belongsTo(File);
 module.exports = File;
