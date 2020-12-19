@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+var cors = require('cors');
 
 //Models & Database
 const sequelize = require('./util/database');
@@ -12,6 +13,8 @@ dotenv.config();
 
 const app = express();
 const port = 4000;
+
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
