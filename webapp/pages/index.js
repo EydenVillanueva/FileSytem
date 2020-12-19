@@ -18,15 +18,17 @@ export default function Home() {
 
             <div className="grid">
                 <Link href="files/register">
-                    <a href="" className="card">
+                    <a className="card">
                         <h3>Add a new File &rarr;</h3>
                         <p>Register a new File with the patient info, allergies and more...</p>
                     </a>
                 </Link>
-                <a href="" className="card">
-                    <h3>Find File by Id &rarr;</h3>
-                    <p>Find any File stored to see its details...</p>
-                </a>
+                <Link href="files/find-file">
+                    <a className="card">
+                        <h3>Find File by Id &rarr;</h3>
+                        <p>Find any File stored to see its details...</p>
+                    </a>
+                </Link>
 
                 <a
                     href=""
@@ -75,7 +77,7 @@ export default function Home() {
               .title {
                 margin: 0;
                 line-height: 1.15;
-                font-size: 4rem;
+                font-size: 2rem;
               }
 
               .title,
@@ -108,7 +110,7 @@ export default function Home() {
               }
 
               .card {
-                margin: 1rem;
+                margin: 0.5rem;
                 flex-basis: 45%;
                 padding: 1.5rem;
                 text-align: left;
@@ -127,14 +129,14 @@ export default function Home() {
               }
 
               .card h3 {
-                margin: 0 0 1rem 0;
-                font-size: 1.5rem;
+                margin: 0 0 0.5rem 0;
+                font-size: 1.3rem;
               }
 
               .card p {
                 margin: 0;
-                font-size: 1.25rem;
-                line-height: 1.5;
+                font-size: 1rem;
+                line-height: 1.3;
               }
 
               .logo {
