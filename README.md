@@ -1,11 +1,12 @@
 # FileSytem
-This is a repository of the codster exercise using the following stacks:
+This is a repository for the codster exercise using the following stacks:
 
 **For the back (Server directory):** 
-- nodeJS
-- postgresSQL
-- sequelize
-- express-validator
+- NodeJS
+- Express
+- PostgresSQL
+- Sequelize
+- Express-validator
 
 
 **For the front (webapp directory):**
@@ -18,7 +19,6 @@ This is a repository of the codster exercise using the following stacks:
 - nodejs v12.16.2
 - npm v6.14.8
 - browser (recommended: Chrome)
-
 
 
 ## Instructions to Execute the projects
