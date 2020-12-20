@@ -12,3 +12,7 @@ export const getFileById = async (id, setState) => {
             setState(result);
         });
 }
+
+export const updateLastVisitedDate = async (id) => {
+    await axios.patch(`/files/${id}`);
+}

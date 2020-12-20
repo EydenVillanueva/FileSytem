@@ -17,13 +17,13 @@ export default function Home() {
             </p>
 
             <div className="grid">
-                <Link href="files/register">
+                <Link href="/files/register">
                     <a className="card">
                         <h3>Add a new File &rarr;</h3>
                         <p>Register a new File with the patient info, allergies and more...</p>
                     </a>
                 </Link>
-                <Link href="files/find-file">
+                <Link href="/files/find-file">
                     <a className="card">
                         <h3>Find File by Id &rarr;</h3>
                         <p>Find any File stored with its Id to see all the details and more...</p>

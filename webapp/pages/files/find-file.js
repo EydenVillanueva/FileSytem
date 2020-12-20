@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Layout from '../../components/layout/layout';
-import {getFileById} from "../../components/file/helpers";
+import {getFileById, updateLastVisitedDate} from "../../components/file/helpers";
 import Moment from 'moment';
 
 export default function FindFileById() {
@@ -19,6 +19,7 @@ export default function FindFileById() {
         try {
             if(fileId !== ''){
                 await getFileById(fileId, setFoundFile);
+                await updateLastVisitedDate(fileId);
             }
             else{
                 setFoundFile();
@@ -69,6 +70,21 @@ export default function FindFileById() {
                         <p>Created Date:
                             <span className="text-blue-500 ml-3">
                                 {Moment(foundFile.file.createdAt).format('d MMM YYYY')}
+                            </span>
+                        </p>
+                        <p>Last Visited:
+                            <span className="text-blue-500 ml-3">
+                                {
+                                    foundFile.file.lastVisited ? (
+                                        <span>
+                                            {Moment(foundFile.file.createdAt).format('d MMM YYYY')}
+                                        </span>
+                                    ) : (
+                                        <span>
+                                            First Time visited
+                                        </span>
+                                    )
+                                }
                             </span>
                         </p>
                         <ul  className="mt-5">
