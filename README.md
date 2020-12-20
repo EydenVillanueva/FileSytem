@@ -1,6 +1,8 @@
 # FileSytem
 This is a repository for the codster exercise using the following stacks:
 
+Class Diagram: https://drive.google.com/drive/folders/1IlRZUR46u6G8KpJaEN19JiiqBaVXgdok?usp=sharing
+
 **For the back (Server directory):** 
 - NodeJS
 - Express
