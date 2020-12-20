@@ -27,10 +27,10 @@ async function assertDatabaseConnectionOk() {
     console.log(`Checking database connection...`);
     try {
         await sequelize.authenticate();
-        if(!process.env.SYNC){
+        if(process.env.SYNCRONIZE_DATABASE === 'true'){
             sequelize
                 .sync()
-                .then(console.log)
+                .then(console.log(''))
                 .catch(console.log);
         }
 
