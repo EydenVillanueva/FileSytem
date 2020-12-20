@@ -18,6 +18,8 @@ router.post('/register-file', [
     ],fileRoutes.registerFile);
 
 router.get('/:fileId', fileRoutes.getFileById);
+router.patch('/:fileId', fileRoutes.updateVisitedFile);
+
 
 module.exports = router;
 

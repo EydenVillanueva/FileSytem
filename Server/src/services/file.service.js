@@ -32,7 +32,7 @@ module.exports = {
         try{
             const file = await File.findByPk(fileId);
 
-            if(file === null) return {}
+            if(file === null) return { 'message' : 'File with the given id not found'};
 
             const allergiesArray = await allergyService.getAllergiesByFile(fileId);
 
@@ -42,8 +42,21 @@ module.exports = {
             };
         }
         catch(error){
-            throw new Error(error);
+            throw error;
         }
 
+    },
+
+    existFileWithId: async (fileId) => {
+        try {
+            const file = await File.findByPk(fileId);
+
+            if(file === null) return { 'message' : 'File with the given id not found'};
+
+            return file;
+        }
+        catch(error){
+            throw error;
+        }
     }
 }

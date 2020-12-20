@@ -17,6 +17,11 @@ const File = sequelize.define('file', {
         type: DataTypes.STRING,
         allowNull: false,
         required: true
+    },
+    lastVisited: {
+        type: DataTypes.DATE,
+        allowNull: true,
+        required: false
     }
 });
 
