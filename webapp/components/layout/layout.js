@@ -26,12 +26,13 @@ export default function Layout({children, home}) {
                 />
                 <meta name="og:title" content={siteTitle}/>
                 <meta name="twitter:card" content="summary_large_image"/>
+                <title>File System</title>
             </Head>
             <header className={styles.header}>
                 <>
                     <h2 className={utilStyles.headingLg}>
                         <a
-                            className={utilStyles.colorInherit}
+                            className="text-xs subpixel-antialiased font-sans"
                             href="https://github.com/EydenVillanueva"
                             target="_blank">
                             Made by: {name}

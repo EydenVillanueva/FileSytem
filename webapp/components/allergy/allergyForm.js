@@ -21,7 +21,7 @@ export default function AllergyForm({setAllergies, allergy, index}){
         <div key={index}>
             <input
                 type="text"
-                className="bg-gray-200 shadow-inner rounded-1 p-2"
+                className="bg-gray-200 shadow-inner rounded-1 p-2 mr-3 mb-1.5"
                 placeholder="Allergy Name"
                 autoComplete="off"
                 name="allergyName"

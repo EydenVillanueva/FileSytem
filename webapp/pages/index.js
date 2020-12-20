@@ -26,38 +26,11 @@ export default function Home() {
                 <Link href="files/find-file">
                     <a className="card">
                         <h3>Find File by Id &rarr;</h3>
-                        <p>Find any File stored to see its details...</p>
+                        <p>Find any File stored with its Id to see all the details and more...</p>
                     </a>
                 </Link>
-
-                <a
-                    href=""
-                    className="card"
-                >
-                    <h3>List of all Files &rarr;</h3>
-                    <p>See all the files displayed....</p>
-                </a>
             </div>
             <style jsx>{`                    
-              footer {
-                width: 100%;
-                height: 100px;
-                border-top: 1px solid #eaeaea;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-
-              footer img {
-                margin-left: 0.5rem;
-              }
-
-              footer a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-
               a {
                 color: inherit;
                 text-decoration: none;
@@ -88,15 +61,6 @@ export default function Home() {
               .description {
                 line-height: 1.5;
                 font-size: 1.5rem;
-              }
-
-              code {
-                background: #fafafa;
-                border-radius: 5px;
-                padding: 0.75rem;
-                font-size: 1.1rem;
-                font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
               }
 
               .grid {
@@ -143,7 +107,7 @@ export default function Home() {
                 height: 1em;
               }
 
-              @media (max-width: 600px) {
+              @media (max-width: 800px) {
                 .grid {
                   width: 100%;
                   flex-direction: column;

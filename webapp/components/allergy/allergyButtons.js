@@ -23,15 +23,15 @@ export default function AllergyButtons({setAllergies}) {
     return (
         <>
             <button
-                className="bg-green-600 hover:bg-green-700 duration-300 text-white shadow p-2 rounded-r"
+                className="bg-green-600 hover:bg-green-700 duration-300 text-white shadow p-2 rounded-r mr-3 mb-5"
                 onClick={handleAddAllergy}>
-                Add Allergy
+                Add
             </button>
 
             <button
                 className="bg-green-600 hover:bg-green-700 duration-300 text-white shadow p-2 rounded-r"
                 onClick={handleResetAllergies}>
-                Reset Allergies
+                Reset
             </button>
         </>
     );
