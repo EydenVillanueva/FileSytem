@@ -34,11 +34,11 @@ module.exports = {
 
             if(file === null) return {}
 
-            const allegiesArray = await allergyService.getAllergiesByFile(fileId);
+            const allergiesArray = await allergyService.getAllergiesByFile(fileId);
 
             return {
                 file,
-                allegiesArray
+                allergiesArray
             };
         }
         catch(error){
