@@ -24,7 +24,7 @@ Class Diagram: https://drive.google.com/drive/folders/1IlRZUR46u6G8KpJaEN19JiiqB
 
 
 ## Instructions to Execute the projects
-This instructions are needed for both projects.
+These instructions are needed for both projects.
 - clone the repository with *git clone https://github.com/EydenVillanueva/FileSytem.git*
 - Make sure dependencies are installed
 - Install project dependencies by running *npm install*
